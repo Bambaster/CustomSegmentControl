@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "AnimationSegment.h"
 
-static float duration = 0.4;
+static float duration = 1.0;
 
 
 @interface ViewController () {
