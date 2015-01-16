@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "AnimationSegment.h"
 
-static float duration = 1.0;
+static float duration = 0.5;
 
 
 @interface ViewController () {
@@ -17,7 +17,6 @@ static float duration = 1.0;
     
     BOOL isFirst;
     BOOL isSecond;
-    
     
     BOOL   isNormalFirst;
     BOOL   isNormalSecond;
@@ -59,19 +58,30 @@ static float duration = 1.0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [self setView];
+}
+
+- (void) setView {
+    
     changeSegment = [[AnimationSegment alloc] init];
     changeSegment.Duration = duration;
+    
     isNormalFirst = NO;
     isNormalSecond = YES;
     isNormalThird = YES;
-    
     isFirst = NO;
     isSecond = YES;
     
     [self setSegmentControlThreeSegment];
     [self setSegmentControlTwoSegment];
     
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+    [self changeFirstPressed];
+    [self changeSecondNormal];
+    [self changeThirdNormal];
+    [self setFirst];
+    });
 
     
 }
@@ -82,7 +92,9 @@ static float duration = 1.0;
     // Dispose of any resources that can be recreated.
 }
 
-
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 
 - (void) setSegmentControlThreeSegment {
     
@@ -120,7 +132,9 @@ static float duration = 1.0;
     
 }
 
-
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 
 #pragma mark - Segment Control (3 segments)
 
@@ -220,7 +234,9 @@ static float duration = 1.0;
     
 }
 
-
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 
 - (void) changeFirstPressed {
     
@@ -281,6 +297,10 @@ static float duration = 1.0;
 
 }
 
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+
 #pragma mark - Segment Control (2 segments)
 
 
@@ -320,7 +340,9 @@ static float duration = 1.0;
     
 }
 
-
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 
 - (void) setFirst {
     

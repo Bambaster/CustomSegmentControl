@@ -15,7 +15,6 @@
 @property (nonatomic, strong) UIColor * segmentButtonBGColor;
 @property (nonatomic, assign) float Duration;
 
-
 - (void) changeSegment;
 
 @end

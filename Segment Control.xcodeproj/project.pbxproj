@@ -23,8 +23,6 @@
 		E7026A1319AB85BA00A2ADB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7026A1119AB85BA00A2ADB3 /* InfoPlist.strings */; };
 		E7026A1519AB85BA00A2ADB3 /* Segment_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7026A1419AB85BA00A2ADB3 /* Segment_ControlTests.m */; };
 		E7026A2019AB8F3700A2ADB3 /* AnimationSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = E7026A1F19AB8F3700A2ADB3 /* AnimationSegment.m */; };
-		E7026A2319ACDF8300A2ADB3 /* triksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7026A2219ACDF8300A2ADB3 /* triksViewController.m */; };
-		E7026A2619ACDF9C00A2ADB3 /* trickObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E7026A2519ACDF9C00A2ADB3 /* trickObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +58,6 @@
 		E7026A1419AB85BA00A2ADB3 /* Segment_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Segment_ControlTests.m; sourceTree = "<group>"; };
 		E7026A1E19AB8F3700A2ADB3 /* AnimationSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSegment.h; sourceTree = "<group>"; };
 		E7026A1F19AB8F3700A2ADB3 /* AnimationSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSegment.m; sourceTree = "<group>"; };
-		E7026A2119ACDF8300A2ADB3 /* triksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triksViewController.h; sourceTree = "<group>"; };
-		E7026A2219ACDF8300A2ADB3 /* triksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = triksViewController.m; sourceTree = "<group>"; };
-		E7026A2419ACDF9C00A2ADB3 /* trickObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trickObj.h; sourceTree = "<group>"; };
-		E7026A2519ACDF9C00A2ADB3 /* trickObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = trickObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +87,6 @@
 		E70269DA19AB85BA00A2ADB3 = {
 			isa = PBXGroup;
 			children = (
-				E7026A2419ACDF9C00A2ADB3 /* trickObj.h */,
-				E7026A2519ACDF9C00A2ADB3 /* trickObj.m */,
-				E7026A2119ACDF8300A2ADB3 /* triksViewController.h */,
-				E7026A2219ACDF8300A2ADB3 /* triksViewController.m */,
 				E70269EC19AB85BA00A2ADB3 /* Segment Control */,
 				E7026A0E19AB85BA00A2ADB3 /* Segment ControlTests */,
 				E70269E519AB85BA00A2ADB3 /* Frameworks */,
@@ -269,8 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7026A2019AB8F3700A2ADB3 /* AnimationSegment.m in Sources */,
-				E7026A2619ACDF9C00A2ADB3 /* trickObj.m in Sources */,
-				E7026A2319ACDF8300A2ADB3 /* triksViewController.m in Sources */,
 				E7026A0019AB85BA00A2ADB3 /* ViewController.m in Sources */,
 				E70269F719AB85BA00A2ADB3 /* AppDelegate.m in Sources */,
 				E70269F319AB85BA00A2ADB3 /* main.m in Sources */,
@@ -412,6 +400,7 @@
 				GCC_PREFIX_HEADER = "Segment Control/Segment Control-Prefix.pch";
 				INFOPLIST_FILE = "Segment Control/Segment Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -425,6 +414,7 @@
 				GCC_PREFIX_HEADER = "Segment Control/Segment Control-Prefix.pch";
 				INFOPLIST_FILE = "Segment Control/Segment Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
