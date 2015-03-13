@@ -174,7 +174,7 @@ static float duration = 0.5;
         isNormalThird = YES;
         
         
-        NSLog(@"Your action");
+        NSLog(@"actionFirstSegment");
 
         
     }
@@ -200,7 +200,7 @@ static float duration = 0.5;
         isNormalSecond = NO;
         isNormalThird = YES;
         
-        NSLog(@"Your action");
+        NSLog(@"actionSecondSegment");
 
     }
     
@@ -227,7 +227,7 @@ static float duration = 0.5;
         isNormalSecond = YES;
         isNormalThird = NO;
         
-        NSLog(@"Your action");
+        NSLog(@"actionThirdSegment");
 
         
     }
@@ -314,10 +314,9 @@ static float duration = 0.5;
         isFirst = NO;
         isSecond = YES;
         
-        NSLog(@"Your action");
+        NSLog(@"FirstSegmentAction");
 
     }
-    
     
     
 }
@@ -332,9 +331,8 @@ static float duration = 0.5;
         isFirst = YES;
         isSecond = NO;
         
-        NSLog(@"Your action");
+        NSLog(@"SecondSegmentAction");
 
-        
         
     }
     
@@ -358,7 +356,6 @@ static float duration = 0.5;
     
     [changeSegment changeSegment];
     
-    
 }
 
 - (void) setSecond {
@@ -373,7 +370,6 @@ static float duration = 0.5;
     changeSegment.segmentButtonBGColor = [UIColor whiteColor];
     
     [changeSegment changeSegment];
-    
     
 }
 
